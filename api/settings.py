@@ -35,8 +35,8 @@ if DEBUG:
     ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://*.railway.app",
-    "https://*.railway.app",
+    "http://*.vercel.app",
+    "https://*.vercel.app",
 ]
 
 # Application definition
