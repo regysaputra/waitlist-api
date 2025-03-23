@@ -14,6 +14,7 @@ git clone https://github.com/codingforentrepreneurs/django-nextjs-backend-api
 Create virtual environment
 ```bash
 # if mac/linux/wsl
+sudo apt install python3.10-venv   # install required package if use linux
 python3 -m venv venv
 
 # if windows powershell
@@ -40,6 +41,11 @@ pip install -r requirements.txt
 Copy default env
 ```bash
 cp .env.sample .env
+```
+
+Generate secret key and put inside .env file
+```bash
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
 ```
 
 Run project
