@@ -56,7 +56,7 @@ rav run server
 
 
 # or directly with django
-cd src
+cd api
 python manage.py runserver 8001
 ```
 
