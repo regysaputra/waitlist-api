@@ -28,7 +28,8 @@ SECRET_KEY = config("DJANGO_SECRET_KEY", cast=str)
 DEBUG = config("DJANGO_DEBUG", cast=bool, default=False)
 
 ALLOWED_HOSTS = [
-    ".railway.app"
+    "127.0.0.1",
+    ".vercel.app"
 ]
 if DEBUG:
     ALLOWED_HOSTS = ["*"]
