@@ -1,14 +1,14 @@
 {
   "version": 2,
   "builds": [{
-    "src": "api/cfehome/wsgi.py",
+    "src": "api/wsgi.py",
     "use": "@vercel/python",
     "config": { "maxLambdaSize": "15mb", "runtime": "python3.11.3" }
   }],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/cfehome/wsgi.py"
+      "dest": "api/wsgi.py"
     }
   ]
 }
