@@ -7,3 +7,4 @@ psycopg[binary] # psycopg
 pydantic[email]
 python-decouple
 rav
+whitenoise
